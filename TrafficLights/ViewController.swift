@@ -17,14 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet private var redLightView: UIView!
     @IBOutlet private var greenLightView: UIView!
 
-    //MARK: - Enumerations
-    private enum WhatLightIsOn {
-        case red
-        case yellow
-        case green
-        case none
-    }
-
     //MARK: - Private Properties
     private let lightIsOn: CGFloat = 1
     private let lightIsOff: CGFloat = 0.3
@@ -38,16 +30,13 @@ class ViewController: UIViewController {
         startButton.layer.cornerRadius = 10
 
         for lightView in lightsStackView.arrangedSubviews {
-            //lightView.layer.cornerRadius = lightView.frame.height / 2
-            /*
-                I have no idea why it doesn't work!
-                Frame height is always equals 170
-                but actually on the screen it's not
-             */
-
-            lightView.layer.cornerRadius = UIScreen.main.bounds.height * 0.189 / 2
-            //0.189 is a ratio of actual view height to screen height.
             lightView.alpha = lightIsOff
+        }
+    }
+
+    override func viewWillLayoutSubviews() {
+        for lightView in lightsStackView.arrangedSubviews {
+            lightView.layer.cornerRadius = lightView.frame.height / 2
         }
     }
 
@@ -74,5 +63,14 @@ class ViewController: UIViewController {
             greenLightView.alpha = lightIsOff
             redLightView.alpha = lightIsOn
         }
+    }
+}
+
+extension ViewController {
+    private enum WhatLightIsOn {
+        case red
+        case yellow
+        case green
+        case none
     }
 }
