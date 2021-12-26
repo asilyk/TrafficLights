@@ -34,11 +34,19 @@ class ViewController: UIViewController {
     //MARK: - Life Cycles Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         startButton.layer.cornerRadius = 10
 
         for lightView in lightsStackView.arrangedSubviews {
-            lightView.layer.cornerRadius = lightView.frame.size.width / 2
+            //lightView.layer.cornerRadius = lightView.frame.height / 2
+            /*
+                I have no idea why it doesn't work!
+                Frame height is always equals 170
+                but actually on the screen it's not
+             */
+
+            lightView.layer.cornerRadius = UIScreen.main.bounds.height * 0.189 / 2
+            //0.189 is a ratio of actual view height to screen height.
             lightView.alpha = lightIsOff
         }
     }

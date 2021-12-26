@@ -16,21 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU7-5r-HEt">
-                                <rect key="frame" x="126" y="753" width="162" height="59"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="gU7-5r-HEt" secondAttribute="height" multiplier="162:59" id="Dus-m4-4d1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
-                                <state key="normal" title="Start">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
-                                </state>
-                                <connections>
-                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="p6F-OB-2Pn"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="tAs-4T-GEm" userLabel="Lights Stack View">
                                 <rect key="frame" x="122" y="100" width="170" height="560"/>
                                 <subviews>
@@ -48,18 +33,34 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="tAs-4T-GEm" secondAttribute="height" multiplier="17:56" id="2gx-XN-VWQ"/>
+                                    <constraint firstAttribute="width" secondItem="tAs-4T-GEm" secondAttribute="height" multiplier="17:56" id="bCX-p9-CAR"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU7-5r-HEt">
+                                <rect key="frame" x="122" y="763" width="170" height="59"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gU7-5r-HEt" secondAttribute="height" multiplier="170:59" id="2XV-Zg-l6a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="p6F-OB-2Pn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gU7-5r-HEt" firstAttribute="top" secondItem="tAs-4T-GEm" secondAttribute="bottom" constant="93" id="77j-pd-DoP"/>
+                            <constraint firstItem="gU7-5r-HEt" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0658482" id="4nw-Zk-zfz"/>
                             <constraint firstItem="tAs-4T-GEm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="8ld-Kx-t17"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gU7-5r-HEt" secondAttribute="bottom" constant="50" id="YkA-I6-imq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gU7-5r-HEt" secondAttribute="bottom" constant="40" id="NDD-v9-ACh"/>
                             <constraint firstItem="tAs-4T-GEm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aOV-y6-2Ah"/>
                             <constraint firstItem="gU7-5r-HEt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cvU-pD-nzY"/>
+                            <constraint firstItem="tAs-4T-GEm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.625" id="jgW-q2-Ogc"/>
                         </constraints>
                     </view>
                     <connections>
@@ -72,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="77"/>
+            <point key="canvasLocation" x="140.57971014492756" y="76.339285714285708"/>
         </scene>
     </scenes>
     <resources>
