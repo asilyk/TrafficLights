@@ -66,6 +66,7 @@ class ViewController: UIViewController {
     }
 }
 
+//MARK: - Enumerations
 extension ViewController {
     private enum WhatLightIsOn {
         case red
