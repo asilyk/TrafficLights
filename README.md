@@ -9,7 +9,7 @@ The training project for creating applications using the UIKit framework.
 - Practice with Storyboard
 
 ## Technical assignment
-![traffic_lights.gif](/gifs/traffic_lights.gif)
+![traffic_lights.gif](/gifs/traffic_ligths.gif)
 
 Create an application where you can switch traffic lights. At the first start, the color of each traffic light signal must be turned off.
 
